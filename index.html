@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="hidden-list">
+    </div>
+    <form onsubmit="event.preventDefault()" class="form-wrapper">
+        <div class="form-section">
+            <label for="name" class="form-text">Sort name - </label>
+            <input name="name" type="text" class="form-input" id="nameOfSort">
+        </div>
+        <div class="form-section">
+            <label for="sortBy" class="form-text">Sort by - </label>
+            <input name="sortBy" type="text" class="form-input" id="sortBy">
+        </div>
+            <select name="choose filter" id="chooseFilter">
+                <option value="include">include</option>
+                <option value="exclude">exclude</option>
+            </select>
+        
+        <button id="sendDataButton" type="submit" class="form-button">Convert</button>
+        <button id="show-list" class="form-button">Show list</button>
+        <div id="resultField" class="result"></div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
